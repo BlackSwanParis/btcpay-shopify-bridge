@@ -1,0 +1,25 @@
+{
+  "name": "btcpay-shopify-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackSwanParis/btcpay-shopify-bridge.git"
+  },
+  "keywords": [],
+  "author": "BlackSwan Paris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackSwanParis/btcpay-shopify-bridge/issues"
+  },
+  "homepage": "https://github.com/BlackSwanParis/btcpay-shopify-bridge#readme",
+  "dependencies": {
+    "btcpay": "^0.2.4",
+    "dotenv": "^8.2.0",
+    "shopify-api-node": "^3.4.3"
+  }
+}

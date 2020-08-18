@@ -102,7 +102,7 @@ Now copy and replace the `1`,`2` and `3` by the following informations :
 
 ### On windows !
 
-`node -e "const BTCPAY_URL = 1, BTCPAY_KEY = 2, BTCPAY_PAIRCODE = 3; const btcpay=require('btcpay'); new btcpay.BTCPayClient(BTCPAY_URL, btcpay.crypto.load_keypair(Buffer.from(BTCPAY_KEY, 'hex'))).pair_client(BTCPAY_PAIRCODE).then(console.log).catch(console.error)"`
+`node -e "const BTCPAY_URL = "1", BTCPAY_KEY = "2", BTCPAY_PAIRCODE = "3"; const btcpay=require('btcpay'); new btcpay.BTCPayClient(BTCPAY_URL, btcpay.crypto.load_keypair(Buffer.from(BTCPAY_KEY, 'hex'))).pair_client(BTCPAY_PAIRCODE).then(console.log).catch(console.error)"`
 
 Then you will have the merchant code, you have to copy and past it in the `.env` for the `MERCHANT=`
 

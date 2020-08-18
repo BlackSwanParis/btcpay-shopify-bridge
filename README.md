@@ -102,18 +102,7 @@ Now copy and replace the `1`,`2` and `3` by the following informations :
 
 ### On windows !
 
-With cmd :
-`setx BTCPAY_URL "1"`
-`setx BTCPAY_KEY "2"`
-`setx BTCPAY_PAIRCODE "3"`
-
-With Powershell :
-`$env:BTCPAY_URL = '1'`
-`$env:BTCPAY_KEY = '2'`
-`$env:BTCPAY_PAIRCODE = '3'`
-
-Then, copy past and run the following code in your shell :
-`node -e "const btcpay=require('btcpay'); new btcpay.BTCPayClient(process.env.BTCPAY_URL, btcpay.crypto.load_keypair(Buffer.from(process.env.BTCPAY_KEY, 'hex'))).pair_client(process.env.BTCPAY_PAIRCODE).then(console.log).catch(console.error)"`
+`node -e "const BTCPAY_URL = 1, BTCPAY_KEY = 2, BTCPAY_PAIRCODE = 3; const btcpay=require('btcpay'); new btcpay.BTCPayClient(BTCPAY_URL, btcpay.crypto.load_keypair(Buffer.from(BTCPAY_KEY, 'hex'))).pair_client(BTCPAY_PAIRCODE).then(console.log).catch(console.error)"`
 
 Then you will have the merchant code, you have to copy and past it in the `.env` for the `MERCHANT=`
 

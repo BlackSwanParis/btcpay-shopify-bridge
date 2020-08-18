@@ -81,7 +81,7 @@ async function loop() {
     await new Promise(resolve => {
         client.get_invoices().then(async (invoices) => {
             // Filter the invoices to clean the array
-            let inv = invoices.filter((x) => x.status === 'paid' && !ids.includes(x.id) && x.orderId);
+            let inv = invoices.filter((x) => (x.status === "complete" || x.status === "complete (paidOver)") && !ids.includes(x.id) && x.orderId);
 
             for (let i = 0; i < inv.length; i++) {
                 let invoice = inv[i];

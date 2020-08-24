@@ -71,7 +71,7 @@ endif %} {% endfor %} {% if alreadySuccess %}
 
 You must have NodeJs and NPM already installed on your favorite computer / server
 
-`git clone git@github.com:BlackSwanParis/btcpay-shopify-bridge.git`  
+`git clone https://github.com/BlackSwanParis/btcpay-shopify-bridge.git`  
 `cd ./btcpay-shopify-bridge`  
 `npm install`
 

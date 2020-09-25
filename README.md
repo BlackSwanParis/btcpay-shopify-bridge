@@ -41,11 +41,11 @@ endif %} {% endfor %} {% if alreadySuccess %}
   const STATUS = {{ alreadySuccess }};
 
   function detailsChanger() {
-      if(!document.querySelectorAll('#main-header')[1] || !document.querySelector('.content-box__row.text-container')) {
+      if(!document.querySelectorAll('#main-header')[0] || !document.querySelector('.content-box__row.text-container')) {
           setTimeout(detailsChanger, 100);
           return;
       }
-      document.querySelectorAll('#main-header')[0].innerHTML = document.querySelectorAll('#main-header')[1].innerText;
+      document.querySelectorAll('#main-header')[0].innerHTML = "Success !";
   }
 
   if(STATUS){

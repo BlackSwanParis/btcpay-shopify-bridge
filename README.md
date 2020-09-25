@@ -142,5 +142,6 @@ BlackSwan Paris
 
 ## Credits
 
-- Thomas Tastet : Crazy Developer
-- Paul ADW : Toxic Bitcoin Maximalist
+- [Blackswan Paris](https://www.blackswan.paris) : The world's finest Shopify agency (WTF is modesty anyways?)
+- [Thomas Tastet](https://twitter.com/techtastet) : Crazy Developer
+- [Paul ADW](https://twitter.com/PaulADW) : Toxic Bitcoin Maximalist
